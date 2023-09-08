@@ -13,15 +13,8 @@ st.markdown(hidden_streamlit_style, unsafe_allow_html=True)
 
 # ====== Authentication & Subscription ====== #
 
-colored_header(label="💸 Donation Status Page", description="The state of donating to C.H.O", color_name=header_colour)
+colored_header(label="💸 Donation Status Page", description="The state of donating to C.H.O", color_name="red-70")
 add_auth(required=True)
-
-# ====== Auth UI Config ====== #
-header_colour = ""
-if st.session_state.user_subscribed:
-    header_colour = "st.session_state.user_subscribed"
-else:
-    header_colour = "red-70"
 
 # ====== Main App: After Subscription ====== #
 
